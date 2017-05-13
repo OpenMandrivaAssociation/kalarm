@@ -52,6 +52,9 @@ BuildRequires:	pkgconfig(Qt5Network)
 BuildRequires:	pkgconfig(Qt5Widgets)
 BuildRequires:	pkgconfig(Qt5X11Extras)
 BuildRequires:	pkgconfig(x11)
+Conflicts:	kmail < 3:17.04.0
+Conflicts:	kdepim-core < 3:17.04.0
+Conflicts:	kalarm < 3:17.04.0
 
 %description
 KAlarm is a personal alarm message, command and email scheduler. It lets you

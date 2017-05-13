@@ -73,7 +73,7 @@ or you can schedule commands to be executed or emails to be sent.
 %{_datadir}/kalarm/*
 %{_docdir}/*/*/kalarm
 %{_iconsdir}/hicolor/*/apps/kalarm.*
-%{_libexecdir}/kalarm_helper
+%{_libexecdir}/kauth/kalarm_helper
 %{_sysconfdir}/xdg/kalarm.categories
 %{_sysconfdir}/xdg/kalarm.renamecategories
 %{_kde5_xmlguidir}/kalarm/kalarmui.rc

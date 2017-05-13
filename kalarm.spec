@@ -46,6 +46,7 @@ BuildRequires:	cmake(KF5PimCommon)
 BuildRequires:	cmake(KF5PimTextEdit)
 BuildRequires:	xsltproc
 BuildRequires:	sasl-devel
+BuildRequires:	boost-devel
 BuildRequires:	pkgconfig(Qt5DBus)
 BuildRequires:	pkgconfig(Qt5Gui)
 BuildRequires:	pkgconfig(Qt5Network)

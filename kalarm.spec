@@ -1,7 +1,7 @@
 Summary:	KDE personal alarm message, command and email scheduler
 Name:		kalarm
 Version:	17.04.0
-Release:	1
+Release:	2
 Epoch:		3
 License:	GPLv2+
 Group:		Graphical desktop/KDE
@@ -54,7 +54,6 @@ BuildRequires:	pkgconfig(Qt5Widgets)
 BuildRequires:	pkgconfig(Qt5X11Extras)
 BuildRequires:	pkgconfig(x11)
 Conflicts:	kmail < 3:17.04.0
-Conflicts:	kdepim-core < 3:17.04.0
 Conflicts:	kalarm < 3:17.04.0
 
 %description

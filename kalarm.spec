@@ -46,6 +46,7 @@ BuildRequires:	cmake(KF5MailTransportAkonadi)
 BuildRequires:	cmake(KF5Mime)
 BuildRequires:	cmake(KF5PimCommon)
 BuildRequires:	cmake(KF5PimTextEdit)
+BuildRequires:	cmake(KF5GlobalAccel)
 BuildRequires:	xsltproc
 BuildRequires:	sasl-devel
 BuildRequires:	boost-devel

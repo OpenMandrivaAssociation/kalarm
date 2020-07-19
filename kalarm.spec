@@ -2,7 +2,7 @@
 
 Summary:	KDE personal alarm message, command and email scheduler
 Name:		kalarm
-Version:	20.04.3
+Version:	20.07.80
 Release:	1
 Epoch:		3
 License:	GPLv2+
@@ -39,7 +39,6 @@ BuildRequires:	cmake(KF5CalendarCore)
 BuildRequires:	cmake(KF5CalendarUtils)
 BuildRequires:	cmake(KF5Holidays)
 BuildRequires:	cmake(KF5IdentityManagement)
-BuildRequires:	cmake(KF5KdepimDBusInterfaces)
 BuildRequires:	cmake(KF5Libkdepim)
 BuildRequires:	cmake(KF5MailCommon)
 BuildRequires:	cmake(KF5MailTransportAkonadi)

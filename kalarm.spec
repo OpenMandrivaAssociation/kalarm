@@ -2,7 +2,7 @@
 
 Summary:	KDE personal alarm message, command and email scheduler
 Name:		kalarm
-Version:	20.08.3
+Version:	20.11.80
 Release:	1
 Epoch:		3
 License:	GPLv2+
@@ -82,8 +82,8 @@ or you can schedule commands to be executed or emails to be sent.
 %{_datadir}/metainfo/org.kde.kalarm.appdata.xml
 %{_datadir}/dbus-1/interfaces/org.kde.kalarm.kalarm.xml
 %{_datadir}/dbus-1/system-services/org.kde.kalarm.rtcwake.service
-%{_datadir}/polkit-1/actions/org.kde.kalarm.rtcwake.policy
 %{_datadir}/dbus-1/system.d/org.kde.kalarm.rtcwake.conf
+%{_datadir}/knotifications5/kalarm.notifyrc
 
 #----------------------------------------------------------------------
 

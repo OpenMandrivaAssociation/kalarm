@@ -2,7 +2,7 @@
 
 Summary:	KDE personal alarm message, command and email scheduler
 Name:		kalarm
-Version:	21.08.3
+Version:	21.12.0
 Release:	1
 Epoch:		3
 License:	GPLv2+
@@ -71,7 +71,6 @@ or you can schedule commands to be executed or emails to be sent.
 %{_bindir}/kalarm
 %{_bindir}/kalarmautostart
 %{_datadir}/config.kcfg/kalarmconfig.kcfg
-%{_datadir}/kconf_update/kalarm*
 %dir %{_datadir}/kalarm/
 %{_datadir}/kalarm/*
 %{_docdir}/*/*/kalarm

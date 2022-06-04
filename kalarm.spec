@@ -3,7 +3,7 @@
 Summary:	KDE personal alarm message, command and email scheduler
 Name:		kalarm
 Version:	22.04.1
-Release:	1
+Release:	2
 Epoch:		3
 License:	GPLv2+
 Group:		Graphical desktop/KDE
@@ -59,6 +59,8 @@ BuildRequires:	pkgconfig(Qt5X11Extras)
 BuildRequires:	pkgconfig(x11)
 Conflicts:	kmail < 3:17.04.0
 Conflicts:	kalarm < 3:17.04.0
+Obsoletes:	kalarmcal < %{EVRD}
+Obsoletes:	%{_lib}KF5AlarmCal5 < %{EVRD}
 
 %description
 KAlarm is a personal alarm message, command and email scheduler. It lets you

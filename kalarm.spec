@@ -2,8 +2,8 @@
 
 Summary:	KDE personal alarm message, command and email scheduler
 Name:		kalarm
-Version:	22.04.1
-Release:	3
+Version:	22.04.2
+Release:	1
 Epoch:		3
 License:	GPLv2+
 Group:		Graphical desktop/KDE
@@ -36,7 +36,6 @@ BuildRequires:	cmake(KF5IMAP)
 BuildRequires:	cmake(KF5Akonadi)
 BuildRequires:	cmake(KF5AkonadiContact)
 BuildRequires:	cmake(KF5AkonadiMime)
-BuildRequires:	cmake(KF5AlarmCalendar)
 BuildRequires:	cmake(KF5CalendarCore)
 BuildRequires:	cmake(KF5CalendarUtils)
 BuildRequires:	cmake(KF5Holidays)

@@ -2,7 +2,7 @@
 
 Summary:	KDE personal alarm message, command and email scheduler
 Name:		kalarm
-Version:	22.07.90
+Version:	22.08.0
 Release:	1
 Epoch:		3
 License:	GPLv2+

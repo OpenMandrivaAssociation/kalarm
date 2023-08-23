@@ -2,7 +2,7 @@
 
 Summary:	KDE personal alarm message, command and email scheduler
 Name:		kalarm
-Version:	23.04.3
+Version:	23.08.0
 Release:	1
 Epoch:		3
 License:	GPLv2+
@@ -32,19 +32,19 @@ BuildRequires:	cmake(KF5WidgetsAddons)
 BuildRequires:	cmake(KF5WindowSystem)
 BuildRequires:	cmake(KF5XmlGui)
 BuildRequires:	cmake(Phonon4Qt5)
-BuildRequires:	cmake(KF5IMAP)
-BuildRequires:	cmake(KF5Akonadi)
-BuildRequires:	cmake(KF5AkonadiContact)
-BuildRequires:	cmake(KF5AkonadiMime)
+BuildRequires:	cmake(KPim5IMAP)
+BuildRequires:	cmake(KPim5Akonadi)
+BuildRequires:	cmake(KPim5AkonadiContact)
+BuildRequires:	cmake(KPim5AkonadiMime)
 BuildRequires:	cmake(KF5CalendarCore)
-BuildRequires:	cmake(KF5CalendarUtils)
+BuildRequires:	cmake(KPim5CalendarUtils)
 BuildRequires:	cmake(KF5Holidays)
-BuildRequires:	cmake(KF5IdentityManagement)
-BuildRequires:	cmake(KF5Libkdepim)
-BuildRequires:	cmake(KF5MailCommon)
-BuildRequires:	cmake(KF5MailTransportAkonadi)
-BuildRequires:	cmake(KF5Mime)
-BuildRequires:	cmake(KF5PimCommon)
+BuildRequires:	cmake(KPim5IdentityManagement)
+BuildRequires:	cmake(KPim5Libkdepim)
+BuildRequires:	cmake(KPim5MailCommon)
+BuildRequires:	cmake(KPim5MailTransport)
+BuildRequires:	cmake(KPim5Mime)
+BuildRequires:	cmake(KPim5PimCommon)
 BuildRequires:	cmake(KF5PimTextEdit)
 BuildRequires:	cmake(KF5GlobalAccel)
 BuildRequires:	xsltproc
@@ -89,11 +89,12 @@ or you can schedule commands to be executed or emails to be sent.
 %{_libdir}/libkalarmcalendar.so.5*
 %{_libdir}/libkalarmplugin.so.5*
 %{_libdir}/qt5/plugins/pim5/kalarm/akonadiplugin.so
+%{_datadir}/icons/*/*/*/show-today.*
 
 #----------------------------------------------------------------------
 
 %prep
-%setup -q
+%autosetup -p1
 %cmake_kde5
 
 %build

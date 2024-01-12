@@ -45,6 +45,7 @@ BuildRequires:	cmake(KPim6Mime)
 BuildRequires:	cmake(KPim6PimCommon)
 BuildRequires:	cmake(KPim6TextEdit)
 BuildRequires:	cmake(KF6GlobalAccel)
+BuildRequires:	cmake(KF6TextWidgets)
 BuildRequires:	xsltproc
 BuildRequires:	sasl-devel
 BuildRequires:	boost-devel
@@ -53,10 +54,6 @@ BuildRequires:	pkgconfig(Qt6Gui)
 BuildRequires:	pkgconfig(Qt6Network)
 BuildRequires:	pkgconfig(Qt6Widgets)
 BuildRequires:	pkgconfig(x11)
-Conflicts:	kmail < 3:17.04.0
-Conflicts:	kalarm < 3:17.04.0
-Obsoletes:	kalarmcal < %{EVRD}
-Obsoletes:	%{_lib}KF6AlarmCal6 < %{EVRD}
 
 %description
 KAlarm is a personal alarm message, command and email scheduler. It lets you

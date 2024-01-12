@@ -46,6 +46,7 @@ BuildRequires:	cmake(KPim6PimCommon)
 BuildRequires:	cmake(KPim6TextEdit)
 BuildRequires:	cmake(KF6GlobalAccel)
 BuildRequires:	cmake(KF6TextWidgets)
+BuildRequires:	cmake(KF6StatusNotifierItem)
 BuildRequires:	xsltproc
 BuildRequires:	sasl-devel
 BuildRequires:	boost-devel

@@ -52,10 +52,14 @@ BuildRequires:	xsltproc
 BuildRequires:	sasl-devel
 BuildRequires:	boost-devel
 BuildRequires:	pkgconfig(Qt6DBus)
+BuildRequires:  pkgconfig(Qt6Core5Compat)
 BuildRequires:	pkgconfig(Qt6Gui)
 BuildRequires:	pkgconfig(Qt6Network)
 BuildRequires:	pkgconfig(Qt6Widgets)
 BuildRequires:	pkgconfig(x11)
+BuildRequires:  cmake(Qt6QmlCore)
+BuildRequires:  qt6-qtbase-theme-gtk3
+BuildRequires:  qml(QtNetwork)
 
 %description
 KAlarm is a personal alarm message, command and email scheduler. It lets you

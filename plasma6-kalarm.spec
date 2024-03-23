@@ -5,8 +5,8 @@
 
 Summary:	KDE personal alarm message, command and email scheduler
 Name:		plasma6-kalarm
-Version:	24.02.0
-Release:	%{?git:0.%{git}.}2
+Version:	24.02.1
+Release:	%{?git:0.%{git}.}1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Url:		http://www.kde.org
@@ -71,6 +71,7 @@ BuildRequires:	pkgconfig(Qt6Gui)
 BuildRequires:	pkgconfig(Qt6Network)
 BuildRequires:	pkgconfig(Qt6Widgets)
 BuildRequires:	pkgconfig(x11)
+BuildRequires:	pkgconfig(libcanberra)
 BuildRequires:  cmake(Qt6QmlCore)
 BuildRequires:  qt6-qtbase-theme-gtk3
 BuildRequires:  qml(QtNetwork)

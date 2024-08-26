@@ -72,6 +72,7 @@ BuildRequires:	pkgconfig(Qt6Network)
 BuildRequires:	pkgconfig(Qt6Widgets)
 BuildRequires:	pkgconfig(x11)
 BuildRequires:	pkgconfig(libcanberra)
+BuildRequires:	pkgconfig(libvlc)
 BuildRequires:  cmake(Qt6QmlCore)
 BuildRequires:  qt6-qtbase-theme-gtk3
 BuildRequires:  qml(QtNetwork)

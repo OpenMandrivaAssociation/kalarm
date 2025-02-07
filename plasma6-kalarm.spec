@@ -5,7 +5,7 @@
 
 Summary:	KDE personal alarm message, command and email scheduler
 Name:		plasma6-kalarm
-Version:	24.12.1
+Version:	24.12.2
 Release:	%{?git:0.%{git}.}1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
@@ -91,6 +91,7 @@ or you can schedule commands to be executed or emails to be sent.
 %dir %{_datadir}/kalarm/
 %{_datadir}/kalarm/*
 %{_docdir}/*/*/kalarm
+%{_iconsdir}/hicolor/*/actions/kalarm*.*
 %{_iconsdir}/hicolor/*/apps/kalarm.*
 %{_datadir}/qlogging-categories6/kalarm.categories
 %{_datadir}/qlogging-categories6/kalarm.renamecategories

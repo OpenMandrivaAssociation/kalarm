@@ -5,7 +5,7 @@
 
 Summary:	KDE personal alarm message, command and email scheduler
 Name:		kalarm
-Version:	25.04.0
+Version:	25.04.3
 Release:	%{?git:0.%{git}.}1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
@@ -78,12 +78,17 @@ BuildRequires:  cmake(Qt6QmlCore)
 BuildRequires:  qt6-qtbase-theme-gtk3
 BuildRequires:  qml(QtNetwork)
 
+%rename plasma6-kalarm
+
+BuildSystem:	cmake
+BuildOption:	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON
+
 %description
 KAlarm is a personal alarm message, command and email scheduler. It lets you
 set up personal alarm messages which pop up on the screen at the chosen time,
 or you can schedule commands to be executed or emails to be sent.
 
-%files -f kalarm.lang
+%files -f %{name}.lang
 %{_datadir}/applications/org.kde.kalarm.desktop
 %{_sysconfdir}/xdg/autostart/kalarm.autostart.desktop
 %{_bindir}/kalarm
@@ -91,7 +96,6 @@ or you can schedule commands to be executed or emails to be sent.
 %{_datadir}/config.kcfg/kalarmconfig.kcfg
 %dir %{_datadir}/kalarm/
 %{_datadir}/kalarm/*
-%{_docdir}/*/*/kalarm
 %{_iconsdir}/hicolor/*/actions/kalarm*.*
 %{_iconsdir}/hicolor/*/apps/kalarm.*
 %{_datadir}/qlogging-categories6/kalarm.categories
@@ -110,19 +114,3 @@ or you can schedule commands to be executed or emails to be sent.
 %{_libdir}/libkalarmplugin.so*
 %{_libdir}/kconf_update_bin/*
 %{_datadir}/kconf_update/*
-
-#----------------------------------------------------------------------
-
-%prep
-%autosetup -p1 -n kalarm-%{?git:%{gitbranchd}}%{!?git:%{version}}
-%cmake \
-	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON \
-	-G Ninja
-
-%build
-%ninja -C build
-
-%install
-%ninja_install -C build
-
-%find_lang kalarm
